@@ -9,7 +9,12 @@
   $form = $doc->getElementById('form');
   $mail = new PHPMailer;
 
-
+  function breaktest($name){
+    global $doc;
+    $breaks = $name;
+    $$breaks = $doc->createElement('br');
+    return ${$breaks};
+  }
   //check if file with password and username to log to gmail exists
   //if it exists, uses it
   if(file_exists('pass.php')) {
@@ -18,7 +23,6 @@
   //if it doesn't exist, create input for password and username
   else {
     $placement = $doc->getElementById('firstformelement');
-    $breaks = $doc->createElement('br');
     //create the email input
     $usernameForm = $doc->createElement('label', 'enter your gmail address');
     $usernameForm->setAttribute('for', 'useremail');
@@ -37,17 +41,21 @@
     }
     //display the email and password input
     $form->insertBefore($usernameForm, $placement);
+    $form->insertBefore(breaktest('test3'), $placement);
     $form->insertBefore($usernameFormInput, $placement);
+    $form->insertBefore(breaktest('test4'), $placement);
     $form->insertBefore($passwordForm, $placement);
+    $form->insertBefore(breaktest('test2'), $placement);
     $form->insertBefore($passwordFormInput, $placement);
-    $form->insertBefore($breaks, $placement);
+    $form->insertBefore(breaktest('test'), $placement);
   }
 
-  function errorMsg($id, $message){
+  function errorMsg($id, $message, $test){
     global $doc, $form;
+    $newnode = $test;
     $element = $doc->getElementById($id);
-    $newnode = $doc->createElement('p', $message);
-    $form->insertBefore($newnode, $element);
+    $$newnode = $doc->createElement('p', $message);
+    $form->insertBefore(${$newnode}, $element);
   }
 
   if (isset($_POST['submit'])) {
@@ -60,6 +68,27 @@
     $mail->SMTPAuth = true;
     $log = [];
     $today = getDate();
+    if(!file_exists('pass.php')) {
+      $sanuser = filter_var($_POST['useremail'], FILTER_SANITIZE_EMAIL);
+      $sanpassword = filter_var($_POST['gmailpassword'], FILTER_SANITIZE_STRING);
+      $valuser = filter_var($sanuser, FILTER_VALIDATE_EMAIL);
+      if( $valuser !== false ){
+        $mail->Username = $valuser;
+      }
+      else {
+        $id = 'useremail';
+        $message = 'email non valide';
+        errorMsg($id, $message, 'newnode2');
+      }
+      if($sanpassword !== "") {
+        $mail->Password = $sanpassword;
+      }
+      else {
+        $id = 'gmailpassword';
+        $message = 'password non valide';
+        errorMsg($id, $message, 'newnode3');
+      }
+    }
     //check if valid email and non empty message
     if( isset($_POST['email']) && $_POST['message'] !== '' ){
       //log time
@@ -72,7 +101,7 @@
       if($valemail == false){
         $id = 'errorEmail';
         $message = 'Veuillez entrez une adresse email valide';
-        errorMsg($id, $message);
+        errorMsg($id, $message, 'newnode4');
       }
       //if valid email
       else {
@@ -110,7 +139,7 @@
             if ($handle->processed) {
               $id = 'errorUpload';
               $message = 'Image uploaded';
-              errorMsg($id, $message);
+              errorMsg($id, $message, 'newnode5');
               $imagePath = $handle->file_dst_pathname;
               $mail->addAttachment($imagePath);
               $handle->clean();
@@ -118,25 +147,25 @@
             else {
               $id = 'errorUpload';
               $message = 'error : ' . $handle->error;
-              errorMsg($id, $message);
+              errorMsg($id, $message, 'newnode6');
             }
           }
           else {
             $id = 'errorUpload';
             $message = 'type de fichier invalide';
-            errorMsg($id, $message);
+            errorMsg($id, $message, 'newnode7');
           }
         }
-        // if (!$mail->send()) {
-        //     echo "Mailer Error: " . $mail->ErrorInfo;
-        // } else {
-        //     echo "Message sent!";
-        // }
+        if (!$mail->send()) {
+            echo "Mailer Error: " . $mail->ErrorInfo;
+        } else {
+            echo "Message sent!";
+        }
         echo '<pre>';
         // var_dump($log);
         $toput = json_encode($log, true) . ',';
         file_put_contents('./logs/logs.txt', $toput, FILE_APPEND);
-        unset($_POST);
+        unset($_POST, $mail, $log, $toput);
         unset($mail);
         unset($log);
         unset($toput);
@@ -147,13 +176,12 @@
       if( isset($_POST['email']) == false ){
         $id = 'errorEmail';
         $message = 'Veuillez entrez une adresse email';
-        errorMsg($id, $message);
+        errorMsg($id, $message, 'newnode8');
       }
       if ($_POST['message'] == '') {
         $id = 'errorMessage';
         $message = 'Veuillez entrez un message';
-        errorMsg($id, $message);
-        echo 'test';
+        errorMsg($id, $message, 'newnode9');
       }
     }
   }
