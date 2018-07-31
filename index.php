@@ -1,4 +1,4 @@
 <?php
-include 'treatment_form.php';
+include 'mini.php';
 print $doc->saveHTML();
  ?>
