@@ -2,6 +2,7 @@
   //Import PHPMailer classes into the global namespace
   use PHPMailer\PHPMailer\PHPMailer;
   require 'vendor/autoload.php';
+  //test
 
   $doc = DOMDocument::loadHTMLFile('source/base_form.html');
   $form = $doc->getElementById('form');
