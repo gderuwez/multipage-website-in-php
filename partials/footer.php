@@ -25,6 +25,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+			<script>
+				window.addEventListener("load", function(){
+				window.cookieconsent.initialise({
+				  "palette": {
+				    "popup": {
+				      "background": "#252e39"
+				    },
+				    "button": {
+				      "background": "#14a7d0"
+				    }
+				  },
+				  "theme": "edgeless"
+				})});
+			</script>
 
 	</body>
 </html>
