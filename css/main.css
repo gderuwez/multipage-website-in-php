@@ -160,15 +160,15 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #e6a016 !important;
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #e7ad2e !important;
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #c53131;
 		font-weight: 600;
 	}
 
@@ -1789,6 +1789,7 @@ input, select, textarea {
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
 				width: 100%;
+		
 			}
 
 		header.major > p {
@@ -2735,7 +2736,7 @@ input, select, textarea {
 		}
 
 			.tiles article .image {
-				display: none;
+				display: visible;
 			}
 
 			.tiles article header {
@@ -2758,7 +2759,7 @@ input, select, textarea {
 				position: absolute;
 				top: 0;
 				width: 100%;
-				z-index: 4;
+				z-index: 6000;
 			}
 
 			.tiles article:before {
@@ -2790,7 +2791,7 @@ input, select, textarea {
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 0.1;
 			}
 
 			.tiles article.is-transitioning {
@@ -2818,11 +2819,11 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #f12e90;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #f3f719;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
@@ -3132,7 +3133,7 @@ input, select, textarea {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #0d10e6;
 			}
 
 			#header .logo:active strong {
@@ -3928,4 +3929,8 @@ input, select, textarea {
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+		article:hover{
+			font-style: italic;
+			color:magenta;
 		}
