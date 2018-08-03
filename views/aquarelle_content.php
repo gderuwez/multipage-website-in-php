@@ -12,7 +12,7 @@ $s21im = './assets/images/pic12.jpg';
 $s21ima = "une aquarelle d'une petite fille tenant un ballon rouge";
 $s2h1name = 'Vocations';
 $s2h1content = "Implantée au cœur de Laeken, cette halte-accueil est née à l’initiative des femmes qui se sont organisées entre elles pour garder les enfants durant les activités et les cours organisés par Vie Féminine à la Maison Mosaïque.
-<br><br>
+
 Progressivement, l’accueil s’est professionnalisé et le service a été autorisé par l’ONE.  Un tel service démontre chaque jour sa nécessité pour permettre aux personnes d’accéder à l’emploi via des formations qualifiantes. Les parents ne peuvent suivre une formation et s’y concentrer que si leurs enfants sont pris en charge pendant ce temps, et s’ils sont rassurés sur la qualité du service.";
 $s22im = './assets/images/pic13.jpg';
 $s22ima = "Une aquarelle de mains";

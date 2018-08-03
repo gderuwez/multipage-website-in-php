@@ -22,9 +22,9 @@
       <section id="one">
         <div class="inner">
           <header class="major">
-            <h2><?php echo $s1name ?></h2>
+            <h2><pre><?php echo $s1name ?></pre></h2>
           </header>
-          <p><?php echo $s1content ?></p>
+          <p><pre><?php echo $s1content ?></pre></p>
         </div>
       </section>
 
@@ -37,9 +37,9 @@
           <div class="content">
             <div class="inner">
               <header class="major">
-                <h3><?php echo $s2h1name ?></h3>
+                <h3><pre><?php echo $s2h1name ?></pre></h3>
               </header>
-              <p><?php echo $s2h1content ?></p>
+              <p><pre><?php echo $s2h1content ?></pre></p>
             </div>
           </div>
         </section>
@@ -50,9 +50,9 @@
           <div class="content">
             <div class="inner">
               <header class="major">
-                <h3><?php echo $s2h2name ?></h3>
+                <h3><pre><?php echo $s2h2name ?></pre></h3>
               </header>
-              <p><?php echo $s2h2content ?></p>
+              <p><pre><?php echo $s2h2content ?></pre></p>
             </div>
           </div>
         </section>
@@ -62,9 +62,9 @@
       <section id="three">
         <div class="inner">
           <header class="major">
-            <h2><?php echo $s3name ?></h2>
+            <h2><pre><?php echo $s3name ?></pre></h2>
           </header>
-          <p><?php echo $s3content ?></p>
+          <p><pre><?php echo $s3content ?></pre></p>
         </div>
       </section>
   </div>
