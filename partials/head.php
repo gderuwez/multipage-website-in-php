@@ -18,7 +18,7 @@
   <div id="wrapper">
   <!-- Header -->
   <header id="header" class="<?php echo $class ?>">
-  <a href="index.html" class="logo"><strong>ASBL</strong> <span>Ballon Rouge</span></a>
+  <a href="?home" class="logo"><strong>ASBL</strong> <span>Ballon Rouge</span></a>
   <nav>
     <a href="#menu">Menu</a>
   </nav>
