@@ -8,9 +8,13 @@ foreach ($log as $key => $value) {
   echo '<pre>';
   echo $log[$key]['date'];
   echo '<br>';
-  echo $log[$key]['first_name'];
-  echo '<br>';
-  echo $log[$key]['format'];
+  if (isset($log[$key]['first_name'])) {
+    echo $log[$key]['first_name'];
+    echo '<br>';
+  }
+  if (isset($log[$key]['format'])) {
+    echo $log[$key]['format'];
+  }
   echo '</pre>';
 }
  ?>
