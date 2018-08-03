@@ -10,22 +10,26 @@ switch ($entry) {
     include './views/home_content.php';
     include './partials/head.php';
     include './partials/home_page.php';
+    include './partials/footer.php';
     break;
   case 'aquarelle':
     include './views/aquarelle_content.php';
     include './partials/head.php';
     include './partials/content_page.php';
+    include './partials/footer.php';
     break;
   case 'accueil':
     include './views/accueil_content.php';
     include './partials/head.php';
     include './partials/content_page.php';
+    include './partials/footer.php';
     break;
   case 'contact':
     include './views/contact_content.php';
     include './partials/head.php';
     include './partials/treatment_form.php';
     include './partials/contact_page.php';
+    include './partials/footer.php';
     break;
   case 'intro':
   case 'ASBL':
@@ -33,13 +37,13 @@ switch ($entry) {
     include './views/intro_content.php';
     include './partials/head.php';
     include './partials/content_page.php';
+    include './partials/footer.php';
     break;
   case 'form-logs';
-    include './source/form-logs.php';
+    include './partials/form-logs.php';
     break;
   default:
     include './views/404.php';
     break;
 }
-include './partials/footer.php';
 ?>
