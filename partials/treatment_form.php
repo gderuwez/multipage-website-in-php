@@ -4,7 +4,7 @@
   require 'vendor/autoload.php';
 
   // load the view into the code
-  $doc = DOMDocument::loadHTMLFile('source/base_form.html');
+  $doc = DOMDocument::loadHTMLFile('views/base_form.html');
   $form = $doc->getElementById('form');
   //create a new instance of mail
   $mail = new PHPMailer;
@@ -187,7 +187,7 @@
         echo '<pre>';
         // encode log as json and put it in file
         $toput = json_encode($log, true) . ',';
-        file_put_contents('./logs/logs.txt', $toput, FILE_APPEND);
+        file_put_contents('../logs/logs.txt', $toput, FILE_APPEND);
         //unset sensitive variables for safety
         unset($_POST, $mail, $log, $toput);
         echo '</pre>';

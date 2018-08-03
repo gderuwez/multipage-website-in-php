@@ -13,5 +13,4 @@ foreach ($log as $key => $value) {
   echo $log[$key]['format'];
   echo '</pre>';
 }
-
  ?>
