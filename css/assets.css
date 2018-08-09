@@ -117,11 +117,32 @@ em {
           width:100%;
           top:0;
           z-index:600;
-          background-color:#cf0909;
+          background-color:#fffffff3;
+          margin-right:30px;
       }
 
     .logo{
         width:50%;
         margin-top:-15px;
     }
-    
+    .container-fluid{
+     margin-right:120px;
+     padding-left:0px;
+    }
+    .container{
+      padding-right:50px;
+    }
+  
+    p{
+      color:ivory;
+    }
+    h3{
+      color:ivory;
+      font-style:italic;
+    }
+    a{
+      color:ivory;
+    }
+    body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }    
