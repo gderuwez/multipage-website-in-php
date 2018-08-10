@@ -62,5 +62,4 @@ Design inspiré depuis un template free of use :
 Image found with google under free of use and free of modifications.
 
 # Lighthouse :
-
-[pc/images/lighthouse-multi-pages-php.png]
+img["pc/images/lighthouse-multi-pages-php.png"]
