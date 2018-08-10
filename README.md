@@ -62,5 +62,4 @@ Design inspiré depuis un template free of use :
 Image found with google under free of use and free of modifications.
 
 # Lighthouse :
-img[(/c/Users/Gaet/Pictures/lighthouse-multipages-php.png
-)]
+img[(/c/Users/Gaet/Desktop/Becode.Projects/multipage-website-in-php-git/multipage-website-in-php/images/lighthouse-multipages-php.png)]
