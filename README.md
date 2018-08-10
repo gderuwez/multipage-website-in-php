@@ -59,7 +59,11 @@ Design inspiré depuis un template free of use :
 
 > https://html5up.net/forty
 
-Image found with google under free of use and free of modifications.
+Image trouvés sur google, libre de droits et de modifications.
 
 # Lighthouse :
-[](/c/Users/Gaet/Desktop/Becode.Projects/multipage-website-in-php-git/multipage-website-in-php/images/lighthouse-multipages-php.png)
+[Audit lighthouse test excellent résultats](https://github.com/Gaet8802/multipage-website-in-php/blob/gaetmico/lighthouse-multipages-php.png)
+
+# Uml charting :
+
+[](https://github.com/Gaet8802/multipage-website-in-php/blob/guillaume/assets/images/code2flow_c436e.svg)
