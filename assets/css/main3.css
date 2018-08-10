@@ -153,22 +153,21 @@ input::-moz-focus-inner {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: inherit;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #e6a016 !important;
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #e7ad2e !important;
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #c53131;
 		font-weight: 600;
 	}
 
@@ -264,11 +263,6 @@ input::-moz-focus-inner {
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
-		white-space: pre-wrap;       /* css-3 */
- 		white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-		white-space: -pre-wrap;      /* Opera 4-6 */
-		white-space: -o-pre-wrap;    /* Opera 7 */
- 		word-wrap: break-word;       /* Internet Explorer 5.5+ */
 	}
 
 		pre code {
@@ -1794,6 +1788,7 @@ input::-moz-focus-inner {
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
 				width: 100%;
+
 			}
 
 		header.major > p {
@@ -2011,9 +2006,9 @@ input::-moz-focus-inner {
 			padding-left: 2.65em;
 			padding-right: 0.75em;
 			position: relative;
-		}
+		} */
 
-			input[type="checkbox"] + label:before,
+			/* input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
@@ -2216,7 +2211,7 @@ input::-moz-focus-inner {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 		padding-left: 1em;
 	}
 
@@ -2740,7 +2735,7 @@ input::-moz-focus-inner {
 		}
 
 			.tiles article .image {
-				display: none;
+				display: visible;
 			}
 
 			.tiles article header {
@@ -2763,7 +2758,7 @@ input::-moz-focus-inner {
 				position: absolute;
 				top: 0;
 				width: 100%;
-				z-index: 4;
+				z-index: 6000;
 			}
 
 			.tiles article:before {
@@ -2795,7 +2790,7 @@ input::-moz-focus-inner {
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 0.1;
 			}
 
 			.tiles article.is-transitioning {
@@ -2823,11 +2818,11 @@ input::-moz-focus-inner {
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #f12e90;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #f3f719;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
@@ -3137,7 +3132,7 @@ input::-moz-focus-inner {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #0d10e6;
 			}
 
 			#header .logo:active strong {
@@ -3933,4 +3928,8 @@ input::-moz-focus-inner {
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+		article:hover{
+			font-style: italic;
+			color:magenta;
 		}

@@ -1,2 +1,4 @@
 /vendor/
 pass.php
+/node_modules/
+gulpfile.js

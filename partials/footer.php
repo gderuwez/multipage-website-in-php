@@ -1,24 +1,22 @@
 
 				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
+					<footer id="footer" class="bg-primary">
+							<ul class="copyright bg-primary margin-0">
 								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
+							<div class="inner">
+								<img src="./assets/images/logo-vf.jpg" alt="logo vie feminine" />
+								<img src="./assets/images/logo-eu.jpg" alt="logo E.U."/>
+							</div>
 						</div>
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/service.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="./assets/js/bootstrap.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -31,13 +29,13 @@
 				window.cookieconsent.initialise({
 				  "palette": {
 				    "popup": {
-				      "background": "#252e39"
+				      "background": "#1d8a8a"
 				    },
 				    "button": {
-				      "background": "#14a7d0"
+				      "background": "#62ffaa"
 				    }
 				  },
-				  "theme": "edgeless"
+				  "position": "bottom-right"
 				})});
 			</script>
 

@@ -9,7 +9,8 @@
 		<title>Generic - Forty by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main3.css" />
+		<link rel="manifest" href="./manifest.json">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -24,7 +25,8 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>404: page not found (but you found Waldo!)</h1>
+										<h1>404: page not found</h1>
+										<h3>But you found Waldo</h3>
 									</header>
 									<span class="image main"><img src="./assets/images/404.jpg" alt="waldo" /></span>
 								</div>

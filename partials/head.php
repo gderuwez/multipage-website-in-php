@@ -1,40 +1,19 @@
-  <!DOCTYPE HTML>
-  <!--
-  	Forty by HTML5 UP
-  	html5up.net | @ajlkn
-  	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  -->
-  <html lang="fr">
-  <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <title><?php echo $title ?></title>
-  </head>
-  <body class="is-preload">
-  <!-- Wrapper -->
-  <div id="wrapper">
-  <!-- Header -->
-  <header id="header" class="<?php echo $class ?>">
-  <a href="?home" class="logo"><strong>ASBL</strong> <span>Ballon Rouge</span></a>
-  <nav>
-    <a href="#menu">Menu</a>
-  </nav>
-  </header>
+<!DOCTYPE HTML>
 
-  <!-- Menu -->
-  <nav id="menu">
-  <ul class="links">
-    <li><a href="?home">Home</a></li>
-    <li><a href="?intro">L'ASBL</a></li>
-    <li><a href="?accueil">Accueillantes</a></li>
-    <li><a href="?aquarelle">L'Aquarelle</a></li>
-    <li><a href="?contact">Contact</a></li>
-  </ul>
-  <ul class="actions stacked">
-    <li><a href="#" class="button primary fit">Commencez</a></li>
-  </ul>
-  </nav>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="manifest" href="./manifest.json">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="./assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link rel="stylesheet" href="./assets/css/main3.css" />
+		<link rel ="stylesheet" href ="./assets/css/assets.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+		<meta name="description" content="Site de l'ASBL ballon rouge">
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/icons/apple-touch-icon.png">
+		<link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/images/icons/favicon-32x32.png">
+		<link rel="shortcut icon" type="image/png" sizes="16x16" href="./assets/images/icons/favicon-16x16.png">
+		<link rel="mask-icon" href="./assets/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="stylesheet" type="text/css" href="assets/css/cookieconsent.min.css" >
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
