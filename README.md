@@ -63,4 +63,4 @@ Image found with google under free of use and free of modifications.
 
 # Lighthouse :
 
-[Alt text](pc/images/lighthouse-multi-pages-php.png)
+[pc/images/lighthouse-multi-pages-php.png]
