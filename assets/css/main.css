@@ -160,15 +160,15 @@ input::-moz-focus-inner {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #e6a016 !important;
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #e7ad2e !important;
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #c53131;
 		font-weight: 600;
 	}
 
@@ -1794,6 +1794,7 @@ input::-moz-focus-inner {
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
 				width: 100%;
+		
 			}
 
 		header.major > p {
@@ -2740,7 +2741,7 @@ input::-moz-focus-inner {
 		}
 
 			.tiles article .image {
-				display: none;
+				display: visible;
 			}
 
 			.tiles article header {
@@ -2763,7 +2764,7 @@ input::-moz-focus-inner {
 				position: absolute;
 				top: 0;
 				width: 100%;
-				z-index: 4;
+				z-index: 6000;
 			}
 
 			.tiles article:before {
@@ -2795,7 +2796,7 @@ input::-moz-focus-inner {
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 0.1;
 			}
 
 			.tiles article.is-transitioning {
@@ -2823,11 +2824,11 @@ input::-moz-focus-inner {
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #cf3783;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #e1e427;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
@@ -2941,12 +2942,12 @@ input::-moz-focus-inner {
 				}
 
 				.spotlights > section > .image:before {
-					background: rgba(36, 41, 67, 0.9);
+					
 					content: '';
 					display: block;
 					height: 100%;
 					left: 0;
-					opacity: 0;
+					opacity: 1;
 					position: absolute;
 					top: 0;
 					width: 100%;
@@ -3137,7 +3138,7 @@ input::-moz-focus-inner {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				background-color: #0d10e6;
 			}
 
 			#header .logo:active strong {
@@ -3934,3 +3935,10 @@ input::-moz-focus-inner {
 			opacity: 1;
 			visibility: visible;
 		}
+<<<<<<< HEAD:assets/css/main.css
+=======
+		article:hover{
+			font-style: italic;
+			color:magenta;
+		}
+>>>>>>> gaetmico:css/main.css

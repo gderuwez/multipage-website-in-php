@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+
+
+body {
+    margin: 0;
+    background-color: #5774b8;
+
+}
+
+
+.sandbox-correct-pronounciation {
+  padding: 10em 0 10em 0;
+  background-color:#5774b8;
+}
+
+.heading-correct-pronounciation {
+
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+
+h1 {
+  color: #fff;
+  font-family: 'Cardo', serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  line-height: 2.2em;
+}
+
+em {
+  font-family: 'EB Garamond', serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  font-style:normal;
+  padding-top: 0.1em;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  
+  &::before, &::after {
+  content: "§";
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+    opacity: 0.2;
+  margin: 0 0.6em;
+  font-size: 0.5em;
+}
+
+}
+
+
+.bottom {
+  font-size: 1.5em;
+  letter-spacing: 0.07em;
+  font-size: 1em;
+  display: block;
+}
+
+
+
+
+.navbar-brand { position: relative; z-index: 6000;}
+
+.navbar-nav.navbar-right .btn { position: relative; z-index: 6000; padding: 4px 20px; margin: 10px auto; }
+
+.navbar .navbar-collapse { position: relative; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: relative; z-index: 6000; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+.img-responsive{
+    width:10%;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; } 
+    
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+}
+
+.s{
+    position:fixed;
+    width:100%;
+    margin:0;
+    z-index:600;
+    }
+
+    h1 {
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        font-size: 92px;
+        padding: 80px 50px;
+        text-align: center;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+    }
+ 
+
+      .sticky{
+          position: fixed;
+          width:100%;
+          top:0;
+          z-index:600;
+          background-color:#fffffff3;
+          margin-right:30px;
+      }
+
+    .logo{
+        width:50%;
+        margin-top:-15px;
+    }
+    .container-fluid{
+     margin-right:120px;
+     padding-left:0px;
+    }
+    .container{
+      padding-right:50px;
+    }
+  
+    p{
+      color:ivory;
+    }
+    h3{
+      color:ivory;
+      font-style:italic;
+    }
+    a{
+      color:ivory;
+    }
+    body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }    
