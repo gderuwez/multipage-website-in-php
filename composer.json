@@ -1,6 +1,7 @@
 {
     "require": {
         "phpmailer/phpmailer": "^6.0",
-        "verot/class.upload.php": "dev-master"
+        "verot/class.upload.php": "dev-master",
+        "league/oauth2-google": "^2.2"
     }
 }
